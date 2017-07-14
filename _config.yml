@@ -1,5 +1,6 @@
 # Site settings
-title: Hux Blog
+title: Pumay's Blog
+subtitle: 一生都在怀抱热望
 SEOTitle: pumay的博客 | Pumay's Blog
 header-img: img/home-bg.jpg
 email: 13572067484@163.com
@@ -67,7 +68,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "一生都在怀抱热望"
+sidebar-about-description: "胆敢纯真"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
