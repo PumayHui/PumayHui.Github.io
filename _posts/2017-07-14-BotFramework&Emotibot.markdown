@@ -25,7 +25,7 @@ tags:
 
 3. Bot Directory--Bot商店，在这里可以找到各个bot，你也可以把自己的Bot发布出来，从而大家都可以看到你的Bot。
 
-###2)如何使用BotFramework构建bot？
+### 2)如何使用BotFramework构建bot？
 
 **四种方式构建**
 
