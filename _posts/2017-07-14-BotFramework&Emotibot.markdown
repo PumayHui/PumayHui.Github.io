@@ -17,13 +17,13 @@ tags:
 
 [https://dev.botframework.com/](https://dev.botframework.com/)
 
-![](http://images2015.cnblogs.com/blog/513999/201609/513999-20160906154434941-2085782362.png)
-
 1. Bot Builder SDKs--Bot生成器，快速生成一个ASP.NET和Node.js的后端服务，提供了像Dialog、FormFlow帮你管理与用户的会话。
 
 2. Bot Connector--Bot的Channel，帮你把你的服务快速发布到各个渠道，比如说Skype，Facebook Messager等等。这样用户就可以在Skype等Channel上使用你的服务了。
 
 3. Bot Directory--Bot商店，在这里可以找到各个bot，你也可以把自己的Bot发布出来，从而大家都可以看到你的Bot。
+
+![](http://images2015.cnblogs.com/blog/513999/201609/513999-20160906154434941-2085782362.png)
 
 ## 2)如何使用BotFramework构建bot？
 
