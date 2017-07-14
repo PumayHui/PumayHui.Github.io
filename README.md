@@ -1,8 +1,8 @@
-#Pumay's Blog
+# Pumay's Blog
 
-###![View Pumay's Blog](http://pumay.life/)
+### ![View Pumay's Blog](http://pumay.life/)
 
-###Brief Intro
+### Brief Intro
 
 This is Pumay's blog.
 
