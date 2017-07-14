@@ -6,21 +6,34 @@ header-img: "img/about-bg.jpg"
 ---
 
 <!-- Language Selector -->
-<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英文 English </option>
+    <option value="1"> 英语 English </option>
 </select>
 
 <!-- Chinese Version -->
-<div class="zh post-container">
-    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
-    {{ about_zh | markdownify }}
+<div class="zh">
+    <blockquote>
+        胆敢纯真。
+    </blockquote>
+
+    <p>
+    西北工业大学研究生一枚，在<a href="http://www.asiip.org/">@陕西省语音与图像信息处理重点实验室</a>学习。研究方向为目标检测与定位，对新技术充满好奇心，喜欢挑战，
+    </p>
+    <p>爱好跑步、音乐、读书、狗狗。喜欢五月天。</p>
+    <hr>
+    <br>
 </div>
 
 <!-- English Version -->
-<div class="en post-container">
-    {% capture about_en %}{% include about/en.md %}{% endcapture %}
-    {{ about_en | markdownify }}
+<div class="en">
+    <blockquote>
+        Researcher or Engineer, things in between.
+    </blockquote>
+
+    <p>I, Robot</p>
+    <hr>
+    <br>
 </div>
 
 <!-- Handle Language Change -->
@@ -29,10 +42,8 @@ header-img: "img/about-bg.jpg"
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
     var $select = document.querySelector("select");
-
     // bind hashchange event
     window.addEventListener('hashchange', _render);
-
     // handle render
     function _render(){
         var _hash = window.location.hash;
@@ -49,7 +60,6 @@ header-img: "img/about-bg.jpg"
             $en.style.display = "none";
         }
     }
-
     // handle select change
     function onLanChange(index){
         if(index == 0){
@@ -58,10 +68,47 @@ header-img: "img/about-bg.jpg"
             window.location.hash = "#en"
         }
     }
-
     // init
     _render();
 </script>
+
+
+
+{% if site.duoshuo_username %}
+<!-- 多说评论框 start -->
+<div class="comment">
+    <div class="ds-thread"
+    {% if site.duoshuo_username == "huxblog" %}
+        data-thread-id="1187623191091085319"
+    {% else %}
+        data-thread-key="{{site.duoshuo_username}}/about"
+    {% endif %}
+
+    data-title="{{page.title}}"
+    data-url="{{site.url}}/about/"></div>
+</div>
+<!-- 多说评论框 end -->
+
+<!-- Duoshuo hacking -->
+<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User hacking by Hux
+    var _user = document.getElementById('dsUser').value;
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+{% endif %}
 
 
 {% if site.disqus_username %}
@@ -79,7 +126,6 @@ header-img: "img/about-bg.jpg"
     var disqus_shortname = "{{site.disqus_username}}";
     var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
     var disqus_url = "{{site.url}}{{page.url}}";
-
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
