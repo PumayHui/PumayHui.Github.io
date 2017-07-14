@@ -11,9 +11,9 @@ tags:
 ---
 
 
-##1. BotFramework
+## 1. BotFramework
 
-###1)概述
+### 1)概述
 
 [https://dev.botframework.com/](https://dev.botframework.com/)
 
@@ -100,11 +100,11 @@ tags:
 
 > Bot connector使bot可以通过使用行业标准的REST和JSON通过HTTPS 与Bot Framework Portal中配置的通道交换消息。
 
-###3)如何调试bot?
+### 3)如何调试bot?
 
 > 三种方式：Bot Framework Emulator、Visual Studio Code、Azure Bot Service bot
 
-###4)如何部署bot?
+### 4)如何部署bot?
 
 > 从本地git仓库部署
 
@@ -112,11 +112,11 @@ tags:
 
 > 从Visual Studio部署
 
-###5)资费
+### 5)资费
 
 Bot Framework preview目前免费。此处列出搭建bot过程中用到的平台及调用的服务资费情况。
 
-####a. Azure
+#### a. Azure
 
 先使用Microsoft Azure订阅，然后才能使用Azure Bot服务。订阅资费如下：
 
@@ -124,21 +124,21 @@ Bot Framework preview目前免费。此处列出搭建bot过程中用到的平�
 
 > Azure Bot 服务可免费使用。只需为使用的资源付费。如LUIS。
 
-####b. LUIS API
+#### b. LUIS API
 
 ![](https://raw.githubusercontent.com/PumayHui/polly_python/master/LUIS.png)
 
-##2. Emotibot
-###1)概述
+## 2. Emotibot
+### 1)概述
 
 [http://botfactory.emotibot.com/BF/platform.html?n=43](http://botfactory.emotibot.com/BF/platform.html?n=43)
 
 竹间智能科技已经开发出了 **Bot Factory情感机器人工厂**， 一个为企业、个人提供情感机器人快速定制服务的平台。 通过Bot Factory情感机器人工厂，可以调用Emotibot智能对话机器人、语音情绪、机器视觉等AI技术，并对机器人进行形象定制、问答定制、知识定制、意图及多轮问答定制等。另外，定制的机器人自带机器自学习优化能力，也就是这个机器人会学习、会自我成长。
 
-###2)如何搭建bot?
+### 2)如何搭建bot?
 
 ![](https://pic3.zhimg.com/v2-a219d43d9409d8f127afc67d60a8951a_r.jpg)
-###3)优势
+### 3)优势
 * 核心技术领先（技术很厉害）
 
 > **语义理解**：基于上下文、用户意图及情感、对用户的记忆，让机器人做到跟人一样，能主动与人进行双向对话；
@@ -165,6 +165,6 @@ Bot Framework preview目前免费。此处列出搭建bot过程中用到的平�
 
 >全图形化配置界面，支持Mobile+PC，操作人员无需任何编程基础，即可轻松地创建、定制与管理机器人。
 >
-###4)资费
+### 4)资费
 
-目前为免费试用。正在与竹间智能沟通长期接入的资费情况。
+目前为免费试用。
