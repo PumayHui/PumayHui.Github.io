@@ -4,7 +4,10 @@ title:      "梦开始的地方"
 subtitle:   ""
 date:       2017-07-14 13:00:00
 author:     "Pumay"
-header-img: ""
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - 随心
 ---
 
 离开大学，步入社会。
