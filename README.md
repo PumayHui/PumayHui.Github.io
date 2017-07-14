@@ -1,6 +1,6 @@
 # Pumay's Blog
 
-### ![View Pumay's Blog](http://pumay.life/)
+### [View Pumay's Blog](http://pumay.life/)
 
 ### Brief Intro
 
@@ -9,7 +9,7 @@ This is Pumay's blog.
 Hope you enjoy it!
 
 
-This theme is forked from ![Hux github](https://github.com/Huxpro/huxpro.github.io)
+This theme is forked from [Hux Blog](https://github.com/Huxpro/huxpro.github.io)
 
 You can clone this blog plate by following command:
 
