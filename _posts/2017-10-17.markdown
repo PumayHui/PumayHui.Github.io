@@ -7,9 +7,7 @@ author:     "Pumay"
 header-img: "img/rentouzhencexiaoguo.jpg"
 catalog: true
 tags:
-    - Detection
-    - CNN
-    
+    - Detection    
 ---
 
 
