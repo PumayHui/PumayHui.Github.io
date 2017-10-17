@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "[译文]End-to-end people detection in crowded scenes"
-subtitle:   ""
+title:      "[译]拥挤场景下端到端的人像检测"
+subtitle:   "End-to-end people detection in crowded scenes"
 date:       2017-10-17 17:45:00
 author:     "Pumay"
 header-img: "img/rentouzhencexiaoguo.jpg"
@@ -12,5 +12,8 @@ tags:
 
 
 ## Abstract
+
+目前的人像检测通常采用两类方法：一类是以滑动窗口的方式扫描图像，另一类是对离散值进行分类。本文提出的模型基于将图像解码为一组人像，将图像作为输入，并直接输出一组不同的检测假设。
+
 ## Introduction
 ### Related work
