@@ -7,10 +7,10 @@ author:     "Pumay"
 header-img: "img/rentouzhencexiaoguo.jpg"
 catalog: true
 tags:
-    - CNN
     - Detection
+    - CNN
+    
 ---
 
 
-
-**那么，在这里，启程吧。**
+**拥挤场景下端到端的行人检测
