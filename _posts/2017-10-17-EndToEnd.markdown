@@ -12,9 +12,10 @@ tags:
 ---
 
 
-## Abstract
+1. vs2015调用python3.5.0时，import TensorFlow出错:
 
-目前的人像检测通常采用两类方法：一类是以滑动窗口的方式扫描图像，另一类是对离散值进行分类。本文提出的模型基于将图像解码为一组人像，将图像作为输入，并直接输出一组不同的检测假设。
+“AttributeError: 'module' object has no attribute 'argv'” 
 
-## Introduction
-### Related work
+找到C:\ProgramData\Anaconda3\Lib\site-packages\tensorflow\python\platform\flags.py，全部注释即可。
+
+2. 
