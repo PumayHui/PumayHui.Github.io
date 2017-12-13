@@ -18,3 +18,6 @@ tags:
 
 找到C:\ProgramData\Anaconda3\Lib\site-packages\tensorflow\python\platform\flags.py，全部注释即可。
 
+## 2. 注意事项
+
+- 检查每个函数返回值、import路径是否正确
