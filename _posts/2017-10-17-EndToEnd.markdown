@@ -1,13 +1,14 @@
 ---
 layout:     post
-title:      "[译]拥挤场景下端到端的人像检测"
-subtitle:   "End-to-end people detection in crowded scenes"
-date:       2017-10-17 17:45:00
+title:      "C++调用python时遇到的一些坑"
+date:       2017-12-13 16:49:00
 author:     "Pumay"
-header-img: "img/rentouzhencexiaoguo.jpg"
+header-img: "http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=C%2B%2B%E8%B0%83%E7%94%A8python&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&cs=3570280440,2807261324&os=2971712187,3806260738&simid=0,0&pn=84&rn=1&di=28027906530&ln=957&fr=&fmq=1513154969190_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=11&spn=0&pi=0&gsm=1e&objurl=http%3A%2F%2Fimages2017.cnblogs.com%2Fblog%2F1272195%2F201711%2F1272195-20171105112957841-62452187.jpg&rpstart=0&rpnum=0&adpicid=0"
 catalog: true
 tags:
-    - Detection    
+    - C++
+    - python
+    
 ---
 
 
