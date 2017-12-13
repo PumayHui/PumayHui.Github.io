@@ -11,6 +11,16 @@ tags:
     
 ---
 
+# 平台：
+
+- Windows 64bit
+
+- VS2015
+
+- anaconda python3.5.0
+
+- TensorFlow 1.1.0
+
 
 ## 1. vs2015调用python3.5.0时，import TensorFlow出错:
 
@@ -18,7 +28,7 @@ tags:
 
 找到C:\ProgramData\Anaconda3\Lib\site-packages\tensorflow\python\platform\flags.py，全部注释即可。
 
-## 2. 注意事项
+## 2. 调用失败时不报错，只是PyImport_Import会返回null，可能是以下原因：
 
 - 每个函数返回值是否正确
 
