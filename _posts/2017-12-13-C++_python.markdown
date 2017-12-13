@@ -12,10 +12,10 @@ tags:
 ---
 
 
-1. vs2015调用python3.5.0时，import TensorFlow出错:
+=============
+## 1. vs2015调用python3.5.0时，import TensorFlow出错:
 
-“AttributeError: 'module' object has no attribute 'argv'” 
+`“AttributeError: 'module' object has no attribute 'argv'” `
 
 找到C:\ProgramData\Anaconda3\Lib\site-packages\tensorflow\python\platform\flags.py，全部注释即可。
 
-2. 
