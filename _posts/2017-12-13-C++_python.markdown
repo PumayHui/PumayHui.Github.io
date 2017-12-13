@@ -3,7 +3,7 @@ layout:     post
 title:      "C++调用python时遇到的一些坑"
 date:       2017-12-13 16:49:00
 author:     "Pumay"
-header-img: "img/python.jpg"
+header-img: "img/post-bg-alitrip.jpg"
 catalog: true
 tags:
     - C++
