@@ -23,3 +23,5 @@ tags:
 - 每个函数返回值是否正确
 
 - import module路径是否正确
+
+- python对应的package如numpy、scipy等要保持与python版本对应
