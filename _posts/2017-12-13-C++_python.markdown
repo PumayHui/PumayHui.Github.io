@@ -36,3 +36,9 @@ tags:
 - import module路径是否正确
 
 - python对应的package如numpy、scipy等要保持与python版本对应
+
+# 小技巧
+
+在网上没有找到C++调用python混合调试的教程，因此自己摸索了很久。
+
+后来发现可以先单独调试python，传参部分可以在python预定义，调试成功后再将接口部分修改为传参即可。
