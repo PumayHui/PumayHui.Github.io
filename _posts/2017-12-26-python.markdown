@@ -1,0 +1,22 @@
+---
+layout:     post
+title:      "python遇到的一些坑"
+date:       2017-12-26 09:57:00
+author:     "Pumay"
+header-img: "img/post-bg-alitrip.jpg"
+catalog: true
+tags:
+    - C++
+    - python
+    
+---
+
+
+# 小坑坑
+
+## 1. python中import skvideo.io:
+
+`“AttributeError: module 'skvideo.io' has no attribute 'VideoCapture'” `
+
+- 暂未解决...
+
