@@ -50,3 +50,13 @@ Zookeeper层次结构命名空间示意图如下：
     更新节点数据
     删除节点
     监控节点变化
+
+# 四. 部署
+
+ 1. 如果尚未安装 JDK，请下载安装它（参阅 参考资料）。这是必需的，因为 ZooKeeper 服务器在 JVM 上运行。
+ 2. 下载 ZooKeeper 3.4.5. tar.gz tarball 并将它解压缩到适当的位置。
+ ```
+ wget http://www.bizdirusa.com/mirrors/apache/ZooKeeper/stable/zookeeper3.4.5.
+ tar.gz tar xzvf zookeeper3.4.5.tar.gz
+ ```
+ 3. 
