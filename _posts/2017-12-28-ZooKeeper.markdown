@@ -59,15 +59,23 @@ Zookeeper层次结构命名空间示意图如下：
  wget http://www.bizdirusa.com/mirrors/apache/ZooKeeper/stable/zookeeper3.4.5.
  tar.gz tar xzvf zookeeper3.4.5.tar.gz
  ```
- 3. 创建一个目录，用它来存储与ZooKeeper服务器有关联的一些状态：mkdir /var/lib/zookeeper。您可能需要将这个目录创建为根目录，并在以后将这个目录的所有者更改为您希望运行ZooKeeper服务器的用户。
-
- 4. 使用：cp zoo_sample.cfg zoo.cfg 命令，复制一份为zoo.cfg文件，这是因为Zookeeper再启动的时候默认使用的是zoo.cfg这个配置文件。
+ 3.ZooKeeper提供了一些可执行程序的工具，为了方便起见，我们将这些工具的路径加入到PATH环境变量中：
+ ``` 
+ export ZOOKEEPER_HOME=~/sw/zookeeper-x.y.z
+ export PATH=$PATH:$ZOOKEEPER_HOME/bin
+ ```
  
- 5. 编辑 zookeeper3.4.5/conf/zoo.cfg 文件，使其如下：
+ 4. 创建一个目录，用它来存储与ZooKeeper服务器有关联的一些状态：mkdir /var/lib/zookeeper。您可能需要将这个目录创建为根目录，并在以后将这个目录的所有者更改为您希望运行ZooKeeper服务器的用户。
+
+ 5. 使用：cp zoo_sample.cfg zoo.cfg 命令，复制一份为zoo.cfg文件，这是因为Zookeeper再启动的时候默认使用的是zoo.cfg这个配置文件。
+ 
+ 6. 编辑 zookeeper3.4.5/conf/zoo.cfg 文件，使其如下：
  ```
  #zookeeper服务心跳检测时间，单位ms
  tickTime=2000 
+ #zookeeper持久化数据存放的目录
  dataDir=/var/lib/zookeeper 
+ #zookeeper监听客户端连接的端口，默认是2181
  clientPort=2181
  #投票选取新leader的初始化时间
  initLimit=5 
@@ -78,16 +86,16 @@ Zookeeper层次结构命名空间示意图如下：
  ```
  所有三个机器都应该打开端口 2181、2888 和 3888。在本例中，端口 2181 由 ZooKeeper 客户端使用，用于连接到 ZooKeeper 服务器；端口 2888 由对等 ZooKeeper 服务器使用，用于互相通信；而端口 3888 用于领导者选举。您可以选择自己喜欢的任何端口。通常建议在所有 ZooKeeper 服务器上使用相同的端口。
  
- 6.	启动ZooKeeper服务器
+ 7.	启动ZooKeeper服务器
  ``` 
  cd bin
  ./zkServer.sh start
  ```
- 7.	启动 CLI（ZooKeeper命令行界面）
+ 8.	启动 CLI（ZooKeeper命令行界面）
  ```
  ./zkCli.sh
  ```
- 8.	停止ZooKeeper服务器
+ 9.	停止ZooKeeper服务器
  ``` 
  ./zkServer.sh stop
  ``` 
