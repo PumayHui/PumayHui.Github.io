@@ -107,3 +107,7 @@ Zookeeper层次结构命名空间示意图如下：
  2. zoo.cfg配置参数解释：
  
  ![](https://pic4.zhimg.com/50/v2-c1524d558c91edd16923927d9dab43e8_hd.jpg)
+ 
+ # 五. 应用
+ 
+ 目的：使用zookeeper作为服务中心来提供注册服务和发现服务
