@@ -65,9 +65,13 @@ Zookeeper层次结构命名空间示意图如下：
  
  5. 编辑 zookeeper3.4.5/conf/zoo.cfg 文件，使其如下：
  ```
- tickTime=2000
- dataDir=/var/lib/zookeeper clientPort=2181
- initLimit=5 syncLimit=2
+ #zookeeper服务心跳检测时间，单位ms
+ tickTime=2000 
+ dataDir=/var/lib/zookeeper 
+ clientPort=2181
+ #投票选取新leader的初始化时间
+ initLimit=5 
+ syncLimit=2
  server.1=zkserver1.mybiz.com:2888:3888
  server.2=zkserver2.mybiz.com:2888:3888
  server.3=zkserver3.mybiz.com:2888:3888
@@ -76,14 +80,15 @@ Zookeeper层次结构命名空间示意图如下：
  
  6.	启动ZooKeeper服务器
  ``` 
- bin/zkServer.sh start
+ cd bin
+ ./zkServer.sh start
  ```
  7.	启动 CLI
  ```
- bin/zkCli.sh
+ ./zkCli.sh
  ```
  8.	停止ZooKeeper服务器
  ``` 
- bin/zkServer.sh stop
+ ./zkServer.sh stop
  ``` 
  ZooKeeper 提供了Java™、C、Python和其他绑定。您可以通过这些绑定调用客户端API，将Java、C或Python应用程序转换为ZooKeeper客户端。
