@@ -75,12 +75,15 @@ Zookeeper层次结构命名空间示意图如下：
  所有三个机器都应该打开端口 2181、2888 和 3888。在本例中，端口 2181 由 ZooKeeper 客户端使用，用于连接到 ZooKeeper 服务器；端口 2888 由对等 ZooKeeper 服务器使用，用于互相通信；而端口 3888 用于领导者选举。您可以选择自己喜欢的任何端口。通常建议在所有 ZooKeeper 服务器上使用相同的端口。
  
  6.	启动ZooKeeper服务器
-$ bin/zkServer.sh start
-
+ ``` 
+ bin/zkServer.sh start
+ ```
  7.	启动 CLI
-$ bin/zkCli.sh
-
+ ```
+ bin/zkCli.sh
+ ```
  8.	停止ZooKeeper服务器
-$ bin/zkServer.sh stop
- 
+ ``` 
+ bin/zkServer.sh stop
+ ``` 
  ZooKeeper 提供了Java™、C、Python和其他绑定。您可以通过这些绑定调用客户端API，将Java、C或Python应用程序转换为ZooKeeper客户端。
