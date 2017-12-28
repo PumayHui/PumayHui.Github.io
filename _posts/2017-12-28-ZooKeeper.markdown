@@ -83,7 +83,7 @@ Zookeeper层次结构命名空间示意图如下：
  cd bin
  ./zkServer.sh start
  ```
- 7.	启动 CLI
+ 7.	启动 CLI（ZooKeeper命令行界面）
  ```
  ./zkCli.sh
  ```
@@ -91,4 +91,7 @@ Zookeeper层次结构命名空间示意图如下：
  ``` 
  ./zkServer.sh stop
  ``` 
- ZooKeeper 提供了Java™、C、Python和其他绑定。您可以通过这些绑定调用客户端API，将Java、C或Python应用程序转换为ZooKeeper客户端。
+ **另：**
+ 1.ZooKeeper 提供了Java™、C、Python和其他绑定。您可以通过这些绑定调用客户端API，将Java、C或Python应用程序转换为ZooKeeper客户端。
+ 2.zoo.cfg配置参数解释：
+ ![](https://pic4.zhimg.com/50/v2-c1524d558c91edd16923927d9dab43e8_hd.jpg)
