@@ -59,4 +59,28 @@ Zookeeper层次结构命名空间示意图如下：
  wget http://www.bizdirusa.com/mirrors/apache/ZooKeeper/stable/zookeeper3.4.5.
  tar.gz tar xzvf zookeeper3.4.5.tar.gz
  ```
- 3. 
+ 3. 创建一个目录，用它来存储与ZooKeeper服务器有关联的一些状态：mkdir /var/lib/zookeeper。您可能需要将这个目录创建为根目录，并在以后将这个目录的所有者更改为您希望运行ZooKeeper服务器的用户。
+
+ 4. 使用：cp zoo_sample.cfg zoo.cfg 命令，复制一份为zoo.cfg文件，这是因为Zookeeper再启动的时候默认使用的是zoo.cfg这个配置文件。
+ 
+ 5. 编辑 zookeeper3.4.5/conf/zoo.cfg 文件，使其如下：
+ ```
+ tickTime=2000
+ dataDir=/var/lib/zookeeper clientPort=2181
+ initLimit=5 syncLimit=2
+ server.1=zkserver1.mybiz.com:2888:3888
+ server.2=zkserver2.mybiz.com:2888:3888
+ server.3=zkserver3.mybiz.com:2888:3888
+ ```
+ 所有三个机器都应该打开端口 2181、2888 和 3888。在本例中，端口 2181 由 ZooKeeper 客户端使用，用于连接到 ZooKeeper 服务器；端口 2888 由对等 ZooKeeper 服务器使用，用于互相通信；而端口 3888 用于领导者选举。您可以选择自己喜欢的任何端口。通常建议在所有 ZooKeeper 服务器上使用相同的端口。
+ 
+ 6.	启动ZooKeeper服务器
+$ bin/zkServer.sh start
+
+ 7.	启动 CLI
+$ bin/zkCli.sh
+
+ 8.	停止ZooKeeper服务器
+$ bin/zkServer.sh stop
+ 
+ ZooKeeper 提供了Java™、C、Python和其他绑定。您可以通过这些绑定调用客户端API，将Java、C或Python应用程序转换为ZooKeeper客户端。
