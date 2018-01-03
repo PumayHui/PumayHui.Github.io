@@ -28,15 +28,15 @@ Thrift主要用于分布式系统中，用于各个服务/模块之间的通信�
 
 # 三. 主要特点
 
-## 1.开发速度快：
+## 1.开发速度快
 
 通过编写RPC接口IDL文件，利用编译生成器自动生成Server端骨架(Skeletons)和客户端Stubs，省去开发者自定义和维护接口编解码、消息传输、服务器多线程模型等基础工作；Server端开发者只需按照服务骨架，写好自己的业务处理程序(Handlers)即可，Client端程序只需创建IDL中定义的服务对象，然后就像调用本地对象的方法一样调用远端服务。
 
-## 2.接口维护简单高效：
+## 2.接口维护简单高效
 
 通过维护Thrift格式的IDL文件（注意写好注释），即可作为给Clients使用的接口文档使用，也自动生成接口代码，始终保持代码和文档的一致性。且Thrift协议可灵活支持接口的可扩展性。
 
-## 3.学习成本低：
+## 3.学习成本低
 
 因为其来自Google Protocol Buffers开发团队，所以其IDL文件风格类似Google Protocol Buffers，且更加易读易懂；特别是RPC服务接口的风格就像写一个一般的面向对象的Class一样简单。
 
@@ -47,6 +47,6 @@ Thrift支持C++, Java, Python, PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, Java
 
 对于我们经常使用的Java、PHP、Python、C++支持良好，虽然对iOS环境的Objective-C(Cocoa)支持稍逊，但也完全满足我们的使用要求。
 
-## 4.已验证成熟稳定：
+## 4.已验证成熟稳定
 
 Thrift在很多开源项目中已经被验证是稳定和高效的，例如Cassandra、Evernode等；在Facebook、Baidu等后台产品中也有使用。
