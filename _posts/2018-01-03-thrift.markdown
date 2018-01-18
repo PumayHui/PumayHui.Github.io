@@ -103,11 +103,11 @@ Thrift 是采用RPC（远程调用）的概念实现跨语言的，Transport层�
 # 七.双向通信
 
 默认情况下，thrift是单向通信的，但是通过一定的技巧是可以实现双向通信的，以下几个参考基本是对getProcessor函数进行了改写，参考： 
+[Thrift双向异步远程调用(外文翻译)学习第一步](http://blog.csdn.net/qq_27989757/article/details/50725973)
+[thrift学习第二步,一个简单的双向通信demo以及原理讲解,以及注意事项](http://blog.csdn.net/qq_27989757/article/details/50761051)
+[Thrift: Bidirectional Async RPC](http://joelpm.com/2009/04/03/thrift-bidirectional-async-rpc.html )
 
-http://blog.csdn.net/qq_27989757/article/details/50725973 
 
-http://blog.csdn.net/qq_27989757/article/details/50761051 
 
-http://joelpm.com/2009/04/03/thrift-bidirectional-async-rpc.html 
 
-http://www.cnphp6.com/archives/63935
+
