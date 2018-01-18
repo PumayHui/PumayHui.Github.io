@@ -96,6 +96,6 @@ public class HelloService {
 
 # 六. 协议栈
 
-![](img/thrift.png)
+![](/img/thrift.png)
 
 Thrift 是采用RPC（远程调用）的概念实现跨语言的，Transport层负责使用指定协议（TCP / HTTP / FILE / PIPE … )交换数据， Protocol层负责用指定的协议（ JSON,Binary，XML … ) 编解码数据，Processor层是我们自己code的层， 负责接口的具体实现（server端）/ 对接口的调用使用（client端） 。
