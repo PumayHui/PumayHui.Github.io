@@ -67,6 +67,9 @@ Thrift在很多开源项目中已经被验证是稳定和高效的，例如Cassa
 
 ![](http://img.blog.csdn.net/20140815234756473?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY29sb3Vyb28=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
+！[](http://img.blog.csdn.net/20150709114237385)
+Thrift 是采用RPC（远程调用）的概念实现跨语言的，Transport层负责使用指定协议（TCP / HTTP / FILE / PIPE … )交换数据， Protocol层负责用指定的协议（ JSON,Binary，XML … ) 编解码数据，Processor层是我们自己code的层， 负责接口的具体实现（server端）/ 对接口的调用使用（client端） 。
+
 # 五. thrift定义Services
 
 服务的定义方法在语义上等同于面向对象语言中的接口。
