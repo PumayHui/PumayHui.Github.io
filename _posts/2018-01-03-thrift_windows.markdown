@@ -11,9 +11,14 @@ tags:
 ---
 
 
-# 一. 准备
+# 一. 环境
 
-1. thrift 0.10.0下载： https://thrift.apache.org/download
+- Windows 7 64bit
+- visual studio 2012
+- thrift 0.10.0
+- boost_1_53_0
+- openssl-1.1.0
+- libevent-2.0.21-stable
 
 # 二. 编译步骤
 
