@@ -22,4 +22,6 @@ tags:
 
 # 二. 编译步骤
 
+1. 编译boost，见![windows 下boost库的简单编译](http://blog.csdn.net/wap1981314/article/details/12138617)
+
 # 三. 配置
