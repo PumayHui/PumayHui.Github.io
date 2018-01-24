@@ -47,14 +47,17 @@ tags:
 # 三. 配置
 
 1. 编写.thrift文件：
-    `
+    ```
     service HelloWorldBidirectionService{
         oneway void SayHello(1:string msg);
     }
-    `
+    ```
 2. 用thrift.exe生成gen-cpp目录（C++，server端）、gen-py文件（Python，client端）：
+
     `thrift --gen cpp hello.thrift`
+    
     `thrift --gen py hello.thrift`
+    
 3. 新建server项目，将gen-cpp内文件添加到项目；
 4. server项目配置：
 
@@ -116,7 +119,7 @@ tags:
     ```
 6. 通信：
     1）打开server工程下的debug目录，点击server.exe打开server端窗口；
+    
     2）在cmd输入：
         `python client.py`
-        
        开始运行client端。
