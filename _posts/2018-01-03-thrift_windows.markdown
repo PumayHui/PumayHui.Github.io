@@ -22,8 +22,8 @@ tags:
 
 # 二. 编译步骤
 
-1. 编译boost，见![windows 下boost库的简单编译](http://blog.csdn.net/wap1981314/article/details/12138617)；
-2. 编译OpenSSL，见![在 Windows下用 Visual Studio 编译 OpenSSL 1.1.0 ](https://www.cnblogs.com/chinalantian/p/5819105.html);
+1. 编译boost，见[windows 下boost库的简单编译](http://blog.csdn.net/wap1981314/article/details/12138617)；
+2. 编译OpenSSL，见[在 Windows下用 Visual Studio 编译 OpenSSL 1.1.0 ](https://www.cnblogs.com/chinalantian/p/5819105.html);
 3. 去{thrift 安裝目錄}\lib\cpp 目录，点击thrift.sln，打开 VS 项目，里边有两个项目libthrift（只用到这个） 和 libthriftnb；
 4. 点击升级；
 5. libthrift工程配置：
