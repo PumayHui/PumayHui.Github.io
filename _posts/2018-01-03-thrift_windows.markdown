@@ -30,10 +30,15 @@ tags:
 5. libthrift工程配置：
 
     libthrift>属性->C/C++->代码生成->多线程调试
+    
     libthrift>属性->C/C++->常规->附加包含目录->\boost_1_53_0
+    
     libthrift>属性->C/C++->常规->附加包含目录->\openssl-1.1.0\include
+    
     libthrift>属性->库管理器->常规->附加库目录->\boost_1_53_0\lib\vc11_x86\lib
+    
     libthrift>属性->库管理器->常规->附加库目录->\openssl-1.1.0
+    
     libthrift>属性->库管理器->所有选项->libssl.lib
                                       libcrypto.lib
 
@@ -52,18 +57,25 @@ tags:
     `thrift --gen py hello.thrift`
 3. 新建server项目，将gen-cpp内文件添加到项目；
 4. server项目配置：
+
     server>属性->C/C++->常规->附加包含目录->\boost_1_53_0
+    
     server>属性->C/C++->常规->附加包含目录->\thrift-0.10.0\lib\cpp\src
+    
     server>属性->C/C++->常规->附加包含目录->\thrift-0.10.0\lib\cpp\src\thrift\windows
+    
     server>属性->C/C++->代码生成->多线程调试
+    
     server>属性->链接器->常规->附加库目录->\boost_1_53_0\lib\vc11_x86\lib
+    
     server>属性->链接器->常规->附加库目录->\thrift-0.10.0\lib\cpp\Debug
+    
 5. client端：
     1）打开cmd窗口，定位到gen-py所在目录；
     2）新建client.py文件，添加代码：
-    `
+    ```
     #!/usr/bin/env python
-    # coding:utf-8
+    #coding:utf-8
     import sys
     sys.path.append('./')
 
@@ -101,9 +113,10 @@ tags:
 
     if __name__ == '__main__':
         main()
-    `
+    ```
 6. 通信：
     1）打开server工程下的debug目录，点击server.exe打开server端窗口；
     2）在cmd输入：
         `python client.py`
+        
        开始运行client端。
