@@ -74,7 +74,9 @@ tags:
     server>属性->链接器->常规->附加库目录->\thrift-0.10.0\lib\cpp\Debug
     
 5. client端：
+
     1）打开cmd窗口，定位到gen-py所在目录；
+    
     2）新建client.py文件，添加代码：
     ```
     #!/usr/bin/env python
@@ -118,6 +120,7 @@ tags:
         main()
     ```
 6. 通信：
+
     1）打开server工程下的debug目录，点击server.exe打开server端窗口；
     
     2）在cmd输入：
