@@ -14,6 +14,7 @@ tags:
 based on : decoding an image into a set of people detections.
 
 input : an image 
+
 output : a set of distinct detection hypotheses
 
 
