@@ -1,1 +1,46 @@
+---
+layout:     post
+title:      "overfeat笔记"
+date:       2018-03-06 15:17:52
+author:     "Pumay"
+header-img: "img/star.png"
+catalog: true
+tags:
+    - cnn
+    
+---
 
+Sermanet P, Eigen D, Zhang X, et al. OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks[J]. Eprint Arxiv, 2013.
+
+# 一. 什么是overfeat
+
+overfeat：特征提取算子(Along with this paper, we release a feature extractor named “OverFeat”.)
+
+文章亮点：
+
+充分利用了卷积神经网络的特征提取功能，它把分类过程中提取到的特征，同时又用于定位、检测等各种任务。只需要改变网络的最后几层，就可以实现不同的任务，而不需要从头开始训练整个网络的参数。主要是把网络的第一层到第五层看做是**特征提取层**，然后不同的任务共享这个特征提取层。基本用了同一个网络架构模型(特征提取层相同，分类回归层根据不同任务稍作修改、训练)、同时共享基础特征。
+
+对于分类问题而言，一个常用的增加训练样本的方法是将训练样本随机移动一个小的位移，或者，等价的在图像中随机取一些大的图像块。然后以这些图像块为输入训练分类模型。在测试阶段，可以采用**滑窗方法**对每一个图像块进行分类，然后组合这些分类结果，得到一个置信度更高的类别标签。
+
+对于检测和定位问题，最自然（也是最常用的方法）就是采用滑窗对每一个图像块进行检测，从而确定目标物体的位置。如图：
+
+![](http://img.blog.csdn.net/20140507171818218)
+
+以上解决分类、检测和定位的方法的共同之处是：需要一个滑窗对整幅图像进行密集采样，然后处理每一个采样得到的图像块。传统的处理这些图像块的方法是一个接一个处理。但是，CNN有更便捷的做法。
+
+CNN模型：
+
+       与Hinton小组的经典论文：ImageNet Classiﬁcation with Deep Convolutional Neural Networks. NIPS2012.
+
+结构一致。区别在于：
+
+a) 训练时输入大小固定，测试时用多尺度输入（具体方法见下文）；
+b) 没有对比度归一化；
+c) 采用没有overlap的max pooling；
+d) 前面两层的feature map的个数比上述论文中多。
+
+# 二. 主要概念
+
+## 1. FCN
+
+## 2. offset max-pooling
