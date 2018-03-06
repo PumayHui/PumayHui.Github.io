@@ -11,6 +11,10 @@ tags:
     
 ---
 
+
+# 一.简介
+
+
 based on : decoding an image into a set of people detections.
 
 input : an image 
@@ -27,5 +31,7 @@ output : a set of distinct detection hypotheses
 5. 当LSTM在具有高于预定阈值的置信度的区域中不能再找到另一个框时，就会产生停止符号；
 6. 输出序列将被拼接为该区域中所有对象实例的最终描述。
 
+# 二.loss function
 
+在每次重复时，LSTM输出一个对象边界框b = {b_pos，b_c}，其中b_pos =（b_x，b_y，b_w，b_h）∈R^4 是边界框的相对位置、宽度和高度，b_c∈[ 0,1]是置信度的真值。低于预定阈值（例如0.5）的置信度值在测试时将被视为停止符号。较高的边界框置信度b_c应该指示该边界框更可能对应于真阳性。我们将相应的标准真值边界框集合表示为G = {b^i | i = 1，...，M}，并且由模型生成的候选边界框集合为C = {b^j | j = 1，...，N}。
 
