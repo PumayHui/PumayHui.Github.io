@@ -71,3 +71,21 @@ output : a set of distinct detection hypotheses
 
 给定方程2中的比较函数Δ的定义，通过匈牙利算法在多项式时间内找到C和G之间的最小成本二分匹配。匈牙利算法适用于具有明确定义的加法和成对比较运算的带边权的任何图。因此定义（+）作为元素相加，（<）作为词典比较。对于图中的例子，正确匹配假设1和4将花费（0, 5, 0.4），而匹配1和3将花费（1, 4, 2.3），匹配2和4将花费（0, 6, 0.2）。注意，用于检测重叠的第一项是如何适当地处理那些尽管具有低秩，但离标准真值差太远而不足以成为敏感匹配的假设的情况（如图3中的假设3的情况）。将这种匹配的相应损失称为匈牙利损失，并表示为L_hung。
 
+# 三. procedure
+
+1. Model training
+
+- Caffe 
+
+2. Initialization
+
+- GoogLeNet weights baseline : OverFeat model(initialized with Imagenet pretraining)
+
+
+3. Regularization
+
+- dropout with probability 0.15 on the output of each LST
+
+4. Stitching
+
+- While  we  trained  our  algorithm  to  predict  bounding  boxes  on  64x64  pixel  regions, we apply our algorithm to full 480x640 images at test time.  To this end, we generate predictions from each region in a 15x20 grid of the image.  We then use a stitching algorithm to recursively merge in predictions from successive cells on the grid. 
