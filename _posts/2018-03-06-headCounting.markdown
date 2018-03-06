@@ -39,7 +39,7 @@ output : a set of distinct detection hypotheses
 
 低于预定阈值（例如0.5）的置信度值在测试时将被视为停止符号,较高的边界框置信度b_c应该指示该边界框更可能对应于正确值。
 
-将相应的标准真值边界框集合表示为G = {b^i|i=1，...，M},由模型生成的候选边界框集合为C = {b^j|j=1，...，N}。
+将相应的标准真值边界框集合表示为G={b^i|i=1，...，M},由模型生成的候选边界框集合为C={b^j|j=1，...，N}。
 
 ![](/img/in-post/2018-03-06-headCounting/location.png)
 
