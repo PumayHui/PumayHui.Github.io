@@ -73,19 +73,18 @@ output : a set of distinct detection hypotheses
 
 # 三. procedure
 
-1. Model training
+ 1. Model training
 
 - Caffe 
 
-2. Initialization
+ 2. Initialization
 
 - GoogLeNet weights baseline : OverFeat model(initialized with Imagenet pretraining)
 
-
-3. Regularization
+ 3. Regularization
 
 - dropout with probability 0.15 on the output of each LST
 
-4. Stitching
+ 4. Stitching
 
 - While  we  trained  our  algorithm  to  predict  bounding  boxes  on  64x64  pixel  regions, we apply our algorithm to full 480x640 images at test time.  To this end, we generate predictions from each region in a 15x20 grid of the image.  We then use a stitching algorithm to recursively merge in predictions from successive cells on the grid. 
