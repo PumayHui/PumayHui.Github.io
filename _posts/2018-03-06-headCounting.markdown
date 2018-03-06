@@ -15,11 +15,7 @@ tags:
 # 一.简介
 
 
-based on : decoding an image into a set of people detections.
-
-input : an image 
-
-output : a set of distinct detection hypotheses
+将图片分成网格，用LSTM在每个网格中单独预测人头，产生序列化的输出结果。
 
 ![](/img/in-post/2018-03-06-headCounting/An overview of model .png)
 
@@ -74,17 +70,13 @@ output : a set of distinct detection hypotheses
 # 三. procedure
 
  1. Model training
-
 - Caffe 
 
  2. Initialization
-
 - GoogLeNet weights baseline : OverFeat model(initialized with Imagenet pretraining)
 
  3. Regularization
-
-- dropout with probability 0.15 on the output of each LST
+- dropout with probability 0.15 on the output of each LSTM
 
  4. Stitching
-
 - While  we  trained  our  algorithm  to  predict  bounding  boxes  on  64x64  pixel  regions, we apply our algorithm to full 480x640 images at test time.  To this end, we generate predictions from each region in a 15x20 grid of the image.  We then use a stitching algorithm to recursively merge in predictions from successive cells on the grid. 
